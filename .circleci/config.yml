@@ -8,3 +8,8 @@ jobs:
     executor: ci-executor
     steps:
       - checkout
+      
+      - run:
+          name: build dependencies
+          command: bundle install
+          
